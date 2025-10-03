@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Copper Canyon Institute: Igniting Legal Careers. Discover our programs, employer partnerships, and secure your future in law.">
+    <title>Copper Canyon Institute - Igniting Legal Careers</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        :root {
+            --color-copper: #B87333; /* A rich copper/gold tone */
+            --color-black: #1A1A1A;
+            --color-light-gray: #F0F0F0;
+            --color-white: #FFFFFF;
+        }
+
+        .text-copper { color: var(--color-copper); }
+        .bg-copper { background-color: var(--color-copper); }
+        .border-copper { border-color: var(--color-copper); }
+
+        .text-black-custom { color: var(--color-black); }
+        .bg-black-custom { background-color: var(--color-black); }
+        .border-black-custom { border-color: var(--color-black); }
+
+        /* Custom glow for interactive elements */
+        .glow-hover:hover {
+            box-shadow: 0 0 10px var(--color-copper), 0 0 20px rgba(184, 115, 51, 0.5);
+            transition: all 0.3s ease-in-out;
+        }
+        .glow-focus:focus {
+            box-shadow: 0 0 0 3px var(--color-copper), 0 0 0 6px rgba(184, 115, 51, 0.3);
+            transition: all 0.3s ease-in-out;
+        }
+
+        /* Fade-in animation for content sections */
+        .fade-in-section {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+        .fade-in-section.is-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body class="bg-light-gray text-black-custom font-sans antialiased leading-relaxed">
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex items-center justify-between">
+            <a href="#" class="flex items-center space-x-2 text-xl font-bold text-black-custom">
+                <div class="w-8 h-8 bg-copper rounded-full flex items-center justify-center">
+                    <i data-lucide="award" class="text-white w-5 h-5"></i>
+                </div>
+                <span>Copper Canyon Institute</span>
+            </a>
+            <div class="hidden md:flex space-x-8">
+                <a href="#home" class="text-black-custom hover:text-copper font-medium glow-hover p-2 rounded-md">Home</a>
+                <a href="#programs" class="text-black-custom hover:text-copper font-medium glow-hover p-2 rounded-md">Programs</a>
+                <a href="#partnerships" class="text-black-custom hover:text-copper font-medium glow-hover p-2 rounded-md">Partnerships</a>
+                <a href="#admissions" class="text-black-custom hover:text-copper font-medium glow-hover p-2 rounded-md">Admissions</a>
+                <a href="#faq" class="text-black-custom hover:text-copper font-medium glow-hover p-2 rounded-md">FAQ</a>
+                <a href="#contact" class="text-black-custom hover:text-copper font-medium glow-hover p-2 rounded-md">Contact</a>
+            </div>
+            <div class="md:hidden">
+                <button aria-label="Open menu" class="text-black-custom focus:outline-none focus:ring-2 focus:ring-copper rounded-md p-2 glow-focus">
+                    <i data-lucide="menu" class="w-6 h-6"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="relative bg-white pt-16 pb-24 lg:pt-24 lg:pb-32 overflow-hidden fade-in-section">
+            <div class="container mx-auto px-6 flex flex-col lg:flex-row items-center justify-between">
+                <div class="lg:w-1/2 text-center lg:text-left mb-12 lg:mb-0">
+                    <h1 class="text-5xl lg:text-6xl font-extrabold leading-tight mb-6 text-black-custom">
+                        Igniting Legal <span class="text-copper">Careers</span>.<br> Shaping the Future.
+                    </h1>
+                    <p class="text-xl lg:text-2xl text-gray-700 mb-8 max-w-lg mx-auto lg:mx-0">
+                        Copper Canyon Institute empowers ambitious individuals and collaborates with leading firms to build exceptional legal talent.
+                    </p>
+                    <div class="flex flex-col sm:flex-row justify-center lg:justify-start space-y-4 sm:space-y-0 sm:space-x-4">
+                        <a href="#admissions" class="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold bg-copper text-white rounded-full shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition duration-300 ease-in-out glow-hover glow-focus">
+                            Explore Programs <i data-lucide="arrow-right" class="ml-3 w-5 h-5"></i>
+                        </a>
+                        <a href="#partnerships" class="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold border-2 border-copper text-copper rounded-full shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition duration-300 ease-in-out glow-hover glow-focus">
+                            Partner with Us <i data-lucide="briefcase" class="ml-3 w-5 h-5"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="lg:w-1/2 relative flex justify-center lg:justify-end">
+                    <!-- Placeholder for legal-education themed imagery -->
+                    <div class="w-[400px] h-[400px] lg:w-[550px] lg:h-[550px] bg-gradient-to-br from-copper/80 to-copper/30 rounded-full flex items-center justify-center shadow-2xl">
+                        <div class="w-56 h-56 lg:w-72 lg:h-72 bg-white rounded-full flex flex-col items-center justify-center p-6 text-center shadow-inner-xl animate-pulse-slow">
+                            <i data-lucide="scale" class="w-20 h-20 text-copper mb-4"></i>
+                            <p class="text-xl font-semibold text-black-custom">Justice through Knowledge</p>
+                        </div>
+                    </div>
+                    <!-- Abstract legal document overlay -->
+                    <div class="absolute bottom-0 right-0 w-48 h-48 bg-gray-200/50 backdrop-blur-sm rounded-lg shadow-lg rotate-12 -translate-x-1/4 translate-y-1/4 hidden lg:block">
+                        <div class="p-4 text-sm text-gray-600">
+                            <p class="font-bold mb-2">Article 3 Section 2:</p>
+                            <div class="h-2 bg-gray-400 rounded-full mb-1 w-full"></div>
+                            <div class="h-2 bg-gray-400 rounded-full mb-1 w-11/12"></div>
+                            <div class="h-2 bg-gray-400 rounded-full mb-1 w-4/5"></div>
+                            <div class="h-2 bg-gray-400 rounded-full mb-1 w-full"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Us / Mission Section -->
+        <section class="bg-light-gray py-20 fade-in-section">
+            <div class="container mx-auto px-6 text-center max-w-4xl">
+                <h2 class="text-4xl font-bold mb-6 text-black-custom">Our Mission: Bridging Ambition & Opportunity</h2>
+                <p class="text-xl text-gray-700 leading-relaxed mb-8">
+                    Copper Canyon Institute stands at the forefront of legal education, dedicated to cultivating top-tier legal professionals. We offer cutting-edge programs designed in collaboration with industry leaders, ensuring our graduates are not just ready, but highly sought after.
+                </p>
+                <div class="grid md:grid-cols-3 gap-8 mt-12">
+                    <div class="p-6 bg-white rounded-lg shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition duration-300 glow-hover">
+                        <i data-lucide="graduation-cap" class="w-12 h-12 text-copper mx-auto mb-4"></i>
+                        <h3 class="text-2xl font-semibold mb-3 text-black-custom">Student Success</h3>
+                        <p class="text-gray-600">Comprehensive training, mentorship, and career services for a impactful start.</p>
+                    </div>
+                    <div class="p-6 bg-white rounded-lg shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition duration-300 glow-hover">
+                        <i data-lucide="handshake" class="w-12 h-12 text-copper mx-auto mb-4"></i>
+                        <h3 class="text-2xl font-semibold mb-3 text-black-custom">Industry Partnerships</h3>
+                        <p class="text-gray-600">Connecting talent with leading law firms and corporate legal departments.</p>
+                    </div>
+                    <div class="p-6 bg-white rounded-lg shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition duration-300 glow-hover">
+                        <i data-lucide="lightbulb" class="w-12 h-12 text-copper mx-auto mb-4"></i>
+                        <h3 class="text-2xl font-semibold mb-3 text-black-custom">Innovative Curriculum</h3>
+                        <p class="text-gray-600">Future-proof education developed with real-world legal challenges in mind.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Programs Section -->
+        <section id="programs" class="bg-white py-20 fade-in-section">
+            <div class="container mx-auto px-6">
+                <h2 class="text-4xl font-bold text-center mb-12 text-black-custom">Our Transformative Programs</h2>
+                <div class="grid lg:grid-cols-2 gap-12">
+                    <!-- Program Card 1 -->
+                    <div class="flex flex-col lg:flex-row bg-light-gray rounded-xl shadow-lg overflow-hidden transition duration-300 hover:scale-[1.01] hover:shadow-xl glow-hover">
+                        <div class="lg:w-2/5 h-64 lg:h-auto bg-gradient-to-br from-copper to-amber-600 flex items-center justify-center p-6">
+                            <i data-lucide="book-open" class="w-24 h-24 text-white opacity-80"></i>
+                        </div>
+                        <div class="lg:w-3/5 p-8 flex flex-col justify-between">
+                            <div>
+                                <h3 class="text-3xl font-bold text-black-custom mb-4">Legal Operations Specialist</h3>
+                                <p class="text-gray-700 leading-relaxed mb-6">
+                                    Master the business of law. This program equips you with the skills to streamline legal processes, manage projects, and implement technology solutions within legal departments and firms.
+                                </p>
+                            </div>
+                            <ul class="text-gray-600 space-y-2 mb-6">
+                                <li class="flex items-center"><i data-lucide="check-circle" class="w-5 h-5 text-copper mr-2"></i> Project Management for Legal</li>
+                                <li class="flex items-center"><i data-lucide="check-circle" class="w-5 h-5 text-copper mr-2"></i> Legal Tech & Automation</li>
+                                <li class="flex items-center"><i data-lucide="check-circle" class="w-5 h-5 text-copper mr-2"></i> Data Analytics in Law</li>
+                            </ul>
+                            <a href="#admissions" class="inline-flex items-center justify-center self-start px-6 py-3 bg-black-custom text-white rounded-full shadow hover:bg-black/80 transition duration-300 glow-focus">
+                                Learn More <i data-lucide="chevron-right" class="ml-2 w-4 h-4"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Program Card 2 -->
+                    <div class="flex flex-col lg:flex-row bg-light-gray rounded-xl shadow-lg overflow-hidden transition duration-300 hover:scale-[1.01] hover:shadow-xl glow-hover">
+                        <div class="lg:w-2/5 h-64 lg:h-auto bg-gradient-to-br from-copper/80 to-yellow-600 flex items-center justify-center p-6">
+                            <i data-lucide="file-text" class="w-24 h-24 text-white opacity-80"></i>
+                        </div>
+                        <div class="lg:w-3/5 p-8 flex flex-col justify-between">
+                            <div>
+                                <h3 class="text-3xl font-bold text-black-custom mb-4">Paralegal Advanced Studies</h3>
+                                <p class="text-gray-700 leading-relaxed mb-6">
+                                    Elevate your paralegal career with specialized training in high-demand legal areas, preparing you for complex casework and leadership roles within firms.
+                                </p>
+                            </div>
+                            <ul class="text-gray-600 space-y-2 mb-6">
+                                <li class="flex items-center"><i data-lucide="check-circle" class="w-5 h-5 text-copper mr-2"></i> Advanced Legal Research</li>
+                                <li class="flex items-center"><i data-lucide="check-circle" class="w-5 h-5 text-copper mr-2"></i> Litigation Support & Discovery</li>
+                                <li class="flex items-center"><i data-lucide="check-circle" class="w-5 h-5 text-copper mr-2"></i> Niche Law Specializations</li>
+                            </ul>
+                            <a href="#admissions" class="inline-flex items-center justify-center self-start px-6 py-3 bg-black-custom text-white rounded-full shadow hover:bg-black/80 transition duration-300 glow-focus">
+                                Learn More <i data-lucide="chevron-right" class="ml-2 w-4 h-4"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Employer Partnership Section -->
+        <section id="partnerships" class="bg-light-gray py-20 fade-in-section">
+            <div class="container mx-auto px-6 text-center max-w-5xl">
+                <h2 class="text-4xl font-bold mb-6 text-black-custom">Cultivating Talent, Empowering Your Firm</h2>
+                <p class="text-xl text-gray-700 leading-relaxed mb-12">
+                    Copper Canyon Institute is dedicated to forging strong alliances with law firms and corporations. Collaborate with us to shape future legal talent and find your next exceptional team member.
+                </p>
+
+                <div class="grid md:grid-cols-2 gap-12 text-left">
+                    <div class="bg-white p-8 rounded-lg shadow-xl border-t-4 border-copper transition duration-300 hover:scale-[1.01] glow-hover">
+                        <i data-lucide="users" class="w-12 h-12 text-copper mb-4"></i>
+                        <h3 class="text-2xl font-bold text-black-custom mb-4">Recruit Our Graduates</h3>
+                        <p class="text-gray-700 mb-6">
+                            Gain access to a pipeline of highly trained, job-ready legal professionals. Our graduates are equipped with practical skills and a deep understanding of modern legal demands.
+                        </p>
+                        <ul class="text-gray-600 space-y-2 mb-6">
+                            <li class="flex items-center"><i data-lucide="check-circle" class="w-5 h-5 text-copper mr-2"></i> Tailored Recruitment Events</li>
+                            <li class="flex items-center"><i data-lucide="check-circle" class="w-5 h-5 text-copper mr-2"></i> Exclusive Access to Talent Pool</li>
+                            <li class="flex items-center"><i data-lucide="check-circle" class="w-5 h-5 text-copper mr-2"></i> Post-Placement Support</li>
+                        </ul>
+                        <a href="#employer-form" class="inline-flex items-center justify-center px-6 py-3 bg-copper text-white rounded-full shadow hover:bg-copper/90 transition duration-300 glow-focus">
+                            Hire Our Graduates <i data-lucide="building-2" class="ml-2 w-5 h-5"></i>
+                        </a>
+                    </div>
+                    <div class="bg-white p-8 rounded-lg shadow-xl border-t-4 border-copper transition duration-300 hover:scale-[1.01] glow-hover">
+                        <i data-lucide="lightbulb" class="w-12 h-12 text-copper mb-4"></i>
+                        <h3 class="text-2xl font-bold text-black-custom mb-4">Curriculum Collaboration</h3>
+                        <p class="text-gray-700 mb-6">
+                            Partner with us to influence our curriculum, ensuring our programs remain aligned with industry needs and provide the most relevant skills for today's legal landscape.
+                        </p>
+                        <ul class="text-gray-600 space-y-2 mb-6">
+                            <li class="flex items-center"><i data-lucide="check-circle" class="w-5 h-5 text-copper mr-2"></i> Advisory Board Participation</li>
+                            <li class="flex items-center"><i data-lucide="check-circle" class="w-5 h-5 text-copper mr-2"></i> Custom Training Initiatives</li>
+                            <li class="flex items-center"><i data-lucide="check-circle" class="w-5 h-5 text-copper mr-2"></i> Research & Development Projects</li>
+                        </ul>
+                        <a href="#employer-form" class="inline-flex items-center justify-center px-6 py-3 bg-black-custom text-white rounded-full shadow hover:bg-black/80 transition duration-300 glow-focus">
+                            Shape the Future <i data-lucide="target" class="ml-2 w-5 h-5"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Admissions Section -->
+        <section id="admissions" class="bg-white py-20 fade-in-section">
+            <div class="container mx-auto px-6 text-center max-w-4xl">
+                <h2 class="text-4xl font-bold mb-6 text-black-custom">Your Path to a Legal Career Starts Here</h2>
+                <p class="text-xl text-gray-700 leading-relaxed mb-12">
+                    Ready to embark on a rewarding journey in the legal field? Our admissions process is designed to be straightforward and supportive.
+                </p>
+
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+                    <div class="flex flex-col items-center p-6 bg-light-gray rounded-lg shadow-md hover:shadow-lg transition duration-300 glow-hover">
+                        <div class="w-16 h-16 bg-copper/10 rounded-full flex items-center justify-center mb-4">
+                            <i data-lucide="pencil" class="w-8 h-8 text-copper"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2 text-black-custom">1. Apply Online</h3>
+                        <p class="text-gray-600 text-sm">Submit your application through our secure portal.</p>
+                    </div>
+                    <div class="flex flex-col items-center p-6 bg-light-gray rounded-lg shadow-md hover:shadow-lg transition duration-300 glow-hover">
+                        <div class="w-16 h-16 bg-copper/10 rounded-full flex items-center justify-center mb-4">
+                            <i data-lucide="clipboard-check" class="w-8 h-8 text-copper"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2 text-black-custom">2. Review & Interview</h3>
+                        <p class="text-gray-600 text-sm">We assess your potential and passion for law.</p>
+                    </div>
+                    <div class="flex flex-col items-center p-6 bg-light-gray rounded-lg shadow-md hover:shadow-lg transition duration-300 glow-hover">
+                        <div class="w-16 h-16 bg-copper/10 rounded-full flex items-center justify-center mb-4">
+                            <i data-lucide="graduation-cap" class="w-8 h-8 text-copper"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2 text-black-custom">3. Enrollment</h3>
+                        <p class="text-gray-600 text-sm">Secure your spot and prepare for orientation.</p>
+                    </div>
+                    <div class="flex flex-col items-center p-6 bg-light-gray rounded-lg shadow-md hover:shadow-lg transition duration-300 glow-hover">
+                        <div class="w-16 h-16 bg-copper/10 rounded-full flex items-center justify-center mb-4">
+                            <i data-lucide="trophy" class="w-8 h-8 text-copper"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2 text-black-custom">4. Career Launch</h3>
+                        <p class="text-gray-600 text-sm">Graduate with confidence, ready for the legal world.</p>
+                    </div>
+                </div>
+
+                <a href="#student-form" class="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold bg-copper text-white rounded-full shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition duration-300 glow-hover glow-focus">
+                    Start Your Application <i data-lucide="chevron-right" class="ml-3 w-5 h-5"></i>
+                </a>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section id="faq" class="bg-light-gray py-20 fade-in-section">
+            <div class="container mx-auto px-6 max-w-3xl">
+                <h2 class="text-4xl font-bold text-center mb-12 text-black-custom">Frequently Asked Questions</h2>
+
+                <div class="space-y-6">
+                    <!-- FAQ Item 1 -->
+                    <details class="bg-white p-6 rounded-lg shadow-md border-l-4 border-copper group glow-hover">
+                        <summary class="flex justify-between items-center cursor-pointer text-xl font-semibold text-black-custom">
+                            What are the prerequisites for admission?
+                            <i data-lucide="chevron-down" class="w-6 h-6 text-copper transform transition-transform duration-300 group-open:rotate-180"></i>
+                        </summary>
+                        <p class="mt-4 text-gray-700 leading-relaxed">
+                            Applicants typically need a bachelor's degree from an accredited institution. Specific program requirements may vary, so please check the individual program pages or contact our admissions team for details.
+                        </p>
+                    </details>
+
+                    <!-- FAQ Item 2 -->
+                    <details class="bg-white p-6 rounded-lg shadow-md border-l-4 border-copper group glow-hover">
+                        <summary class="flex justify-between items-center cursor-pointer text-xl font-semibold text-black-custom">
+                            What career support does Copper Canyon Institute offer?
+                            <i data-lucide="chevron-down" class="w-6 h-6 text-copper transform transition-transform duration-300 group-open:rotate-180"></i>
+                        </summary>
+                        <p class="mt-4 text-gray-700 leading-relaxed">
+                            We provide extensive career services, including resume workshops, interview preparation, networking events with partner firms, and personalized job placement assistance to ensure our graduates find fulfilling roles.
+                        </p>
+                    </details>
+
+                    <!-- FAQ Item 3 -->
+                    <details class="bg-white p-6 rounded-lg shadow-md border-l-4 border-copper group glow-hover">
+                        <summary class="flex justify-between items-center cursor-pointer text-xl font-semibold text-black-custom">
+                            How do you collaborate with employers?
+                            <i data-lucide="chevron-down" class="w-6 h-6 text-copper transform transition-transform duration-300 group-open:rotate-180"></i>
+                        </summary>
+                        <p class="mt-4 text-gray-700 leading-relaxed">
+                            Employers can partner with us through various channels: recruiting our graduates, participating in our advisory board, offering internships, or collaborating on custom training programs for their staff.
+                        </p>
+                    </details>
+
+                    <!-- FAQ Item 4 -->
+                    <details class="bg-white p-6 rounded-lg shadow-md border-l-4 border-copper group glow-hover">
+                        <summary class="flex justify-between items-center cursor-pointer text-xl font-semibold text-black-custom">
+                            Are there options for financial aid or scholarships?
+                            <i data-lucide="chevron-down" class="w-6 h-6 text-copper transform transition-transform duration-300 group-open:rotate-180"></i>
+                        </summary>
+                        <p class="mt-4 text-gray-700 leading-relaxed">
+                            Yes, we offer various financial aid options and scholarships. Our admissions team can guide you through the available opportunities and application process.
+                        </p>
+                    </details>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section with Forms -->
+        <section id="contact" class="bg-white py-20 fade-in-section">
+            <div class="container mx-auto px-6">
+                <h2 class="text-4xl font-bold text-center mb-12 text-black-custom">Get In Touch</h2>
+
+                <div class="grid lg:grid-cols-2 gap-12">
+                    <!-- Student Inquiry Form -->
+                    <div id="student-form" class="bg-light-gray p-8 rounded-xl shadow-xl border-t-4 border-copper">
+                        <div class="flex items-center space-x-4 mb-6">
+                            <i data-lucide="user-plus" class="w-10 h-10 text-copper"></i>
+                            <h3 class="text-3xl font-bold text-black-custom">Prospective Student Inquiry</h3>
+                        </div>
+                        <p class="text-gray-700 mb-6">
+                            Tell us about your aspirations, and we'll help you navigate your journey to a fulfilling legal career.
+                        </p>
+                        <form class="space-y-6">
+                            <div>
+                                <label for="student-name" class="block text-sm font-medium text-gray-800 mb-2">Full Name</label>
+                                <input type="text" id="student-name" name="student-name" class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-copper focus:border-copper transition glow-focus" placeholder="John Doe" required>
+                            </div>
+                            <div>
+                                <label for="student-email" class="block text-sm font-medium text-gray-800 mb-2">Email Address</label>
+                                <input type="email" id="student-email" name="student-email" class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-copper focus:border-copper transition glow-focus" placeholder="john.doe@example.com" required>
+                            </div>
+                            <div>
+                                <label for="student-program" class="block text-sm font-medium text-gray-800 mb-2">Interested Program</label>
+                                <select id="student-program" name="student-program" class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-copper focus:border-copper transition glow-focus">
+                                    <option value="">Select a Program</option>
+                                    <option value="legal-ops">Legal Operations Specialist</option>
+                                    <option value="paralegal">Paralegal Advanced Studies</option>
+                                    <option value="other">Other / General Inquiry</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label for="student-message" class="block text-sm font-medium text-gray-800 mb-2">Your Message</label>
+                                <textarea id="student-message" name="student-message" rows="4" class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-copper focus:border-copper transition glow-focus" placeholder="I'd like to learn more about..."></textarea>
+                            </div>
+                            <button type="submit" class="w-full px-8 py-4 bg-copper text-white text-lg font-semibold rounded-full shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition duration-300 glow-hover glow-focus">
+                                Submit Inquiry <i data-lucide="send" class="ml-2 w-5 h-5 inline-block"></i>
+                            </button>
+                        </form>
+                    </div>
+
+                    <!-- Employer Partnership Form -->
+                    <div id="employer-form" class="bg-light-gray p-8 rounded-xl shadow-xl border-t-4 border-black-custom">
+                        <div class="flex items-center space-x-4 mb-6">
+                            <i data-lucide="briefcase" class="w-10 h-10 text-black-custom"></i>
+                            <h3 class="text-3xl font-bold text-black-custom">Employer Partnership</h3>
+                        </div>
+                        <p class="text-gray-700 mb-6">
+                            Connect with us to discuss recruiting opportunities, curriculum collaboration, or other partnership ideas.
+                        </p>
+                        <form class="space-y-6">
+                            <div>
+                                <label for="employer-company" class="block text-sm font-medium text-gray-800 mb-2">Company/Firm Name</label>
+                                <input type="text" id="employer-company" name="employer-company" class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-black-custom focus:border-black-custom transition glow-focus" placeholder="Acme Legal Group" required>
+                            </div>
+                            <div>
+                                <label for="employer-name" class="block text-sm font-medium text-gray-800 mb-2">Your Name</label>
+                                <input type="text" id="employer-name" name="employer-name" class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-black-custom focus:border-black-custom transition glow-focus" placeholder="Jane Smith" required>
+                            </div>
+                            <div>
+                                <label for="employer-email" class="block text-sm font-medium text-gray-800 mb-2">Email Address</label>
+                                <input type="email" id="employer-email" name="employer-email" class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-black-custom focus:border-black-custom transition glow-focus" placeholder="jane.smith@acmelegal.com" required>
+                            </div>
+                            <div>
+                                <label for="employer-interest" class="block text-sm font-medium text-gray-800 mb-2">Area of Interest</label>
+                                <select id="employer-interest" name="employer-interest" class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-black-custom focus:border-black-custom transition glow-focus">
+                                    <option value="">Select an Area</option>
+                                    <option value="recruiting">Recruiting Graduates</option>
+                                    <option value="curriculum">Curriculum Collaboration</option>
+                                    <option value="internships">Internship Opportunities</option>
+                                    <option value="other">Other Partnership</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label for="employer-message" class="block text-sm font-medium text-gray-800 mb-2">Your Message</label>
+                                <textarea id="employer-message" name="employer-message" rows="4" class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-black-custom focus:border-black-custom transition glow-focus" placeholder="We are interested in..."></textarea>
+                            </div>
+                            <button type="submit" class="w-full px-8 py-4 bg-black-custom text-white text-lg font-semibold rounded-full shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition duration-300 glow-hover glow-focus">
+                                Submit Partnership Request <i data-lucide="handshake" class="ml-2 w-5 h-5 inline-block"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-black-custom text-gray-300 py-16">
+        <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-12">
+            <div class="col-span-full md:col-span-1">
+                <a href="#" class="flex items-center space-x-2 text-xl font-bold text-white mb-4">
+                    <div class="w-8 h-8 bg-copper rounded-full flex items-center justify-center">
+                        <i data-lucide="award" class="text-white w-5 h-5"></i>
+                    </div>
+                    <span>Copper Canyon Institute</span>
+                </a>
+                <p class="text-sm leading-relaxed">&copy; 2025 Copper Canyon Institute. All rights reserved.</p>
+            </div>
+
+            <div>
+                <h4 class="text-white text-lg font-semibold mb-4">Quick Links</h4>
+                <ul class="space-y-3">
+                    <li><a href="#home" class="hover:text-copper transition duration-200">Home</a></li>
+                    <li><a href="#programs" class="hover:text-copper transition duration-200">Programs</a></li>
+                    <li><a href="#partnerships" class="hover:text-copper transition duration-200">Employer Partnership</a></li>
+                    <li><a href="#admissions" class="hover:text-copper transition duration-200">Admissions</a></li>
+                    <li><a href="#faq" class="hover:text-copper transition duration-200">FAQ</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="text-white text-lg font-semibold mb-4">Connect</h4>
+                <ul class="space-y-3">
+                    <li><a href="#contact" class="hover:text-copper transition duration-200 flex items-center"><i data-lucide="mail" class="w-5 h-5 mr-2"></i> info@coppercanyon.edu</a></li>
+                    <li><a href="#" class="hover:text-copper transition duration-200 flex items-center"><i data-lucide="phone" class="w-5 h-5 mr-2"></i> +1 (555) 123-4567</a></li>
+                    <li><a href="#" class="hover:text-copper transition duration-200 flex items-center"><i data-lucide="map-pin" class="w-5 h-5 mr-2"></i> 123 Legal Way, Phoenix, AZ</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="text-white text-lg font-semibold mb-4">Follow Us</h4>
+                <div class="flex space-x-4">
+                    <a href="#" aria-label="LinkedIn" class="text-gray-300 hover:text-copper transition duration-200"><i data-lucide="linkedin" class="w-6 h-6"></i></a>
+                    <a href="#" aria-label="Twitter" class="text-gray-300 hover:text-copper transition duration-200"><i data-lucide="twitter" class="w-6 h-6"></i></a>
+                    <a href="#" aria-label="Facebook" class="text-gray-300 hover:text-copper transition duration-200"><i data-lucide="facebook" class="w-6 h-6"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+
+        // Scroll animation for fade-in sections
+        document.addEventListener('DOMContentLoaded', () => {
+            const sections = document.querySelectorAll('.fade-in-section');
+
+            const observerOptions = {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.1
+            };
+
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('is-visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
+
+            sections.forEach(section => {
+                observer.observe(section);
+            });
+        });
+    </script>
+</body>
+</html>
+<!-- Performance Improvement: Consider preloading Lucide icons SVG for faster rendering or using a subset to reduce bundle size if not all are needed. -->
